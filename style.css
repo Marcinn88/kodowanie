@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.header {
+  width: 100vw;
+  background-color: #ffb8ca;
+}
+
+.header__bar-wrapper {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 37px 46px;
+  align-items: center;
+}
+
+.header__logo {
+  width: 199px;
+  cursor: pointer;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  gap: 35px;
+}
+
+.header__element {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header__element--active {
+  color: #d41443;
+}
+
+.header__main-button {
+  padding: 12px 37px;
+  background-color: white;
+  border-radius: 22px;
+  color: #d41443;
+  font-weight: bold;
+  cursor: pointer;
+}
+.header__leftside {
+  width: 418px;
+  margin-left: 77px;
+  display: flex;
+  flex-direction: column;
+}
+.header__title {
+  max-width: 300px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 38px;
+}
+.header__title--describe {
+  font-size: 58px;
+  line-height: 90.5%;
+  letter-spacing: 0.04em;
+  color: #d41443;
+  padding: 0;
+}
+.header__buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  margin-left: 38px;
+}
+.header__left-button {
+  background-color: #d41443;
+  padding: 10px 24px;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header__right-button {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 22px;
+  color: #d41443;
+  cursor: pointer;
+}
+.header__deco-image {
+  max-width: 188px;
+  margin-top: 56px;
+  margin-bottom: 45px;
+}
+.header__describe-text {
+  max-width: 200px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+
+  color: #ffffff;
+}
+.header__left-bar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
