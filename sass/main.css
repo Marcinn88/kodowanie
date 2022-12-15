@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  width: 100vw;
+  max-width: 1600px;
+  background-color: #ffb8ca;
+  position: relative;
+  z-index: -2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__background-image {
+  position: absolute;
+  right: 15%;
+  z-index: -1;
+}
+
+.header__background-image--circle {
+  top: 55px;
+  right: 20%;
+  width: 538px;
+}
+
+.header__background-image--icecream {
+  top: 115px;
+  right: calc(20% + 183px);
+  width: 236px;
+}
+
+.header__background-image--lady {
+  bottom: -5px;
+  right: 10%;
+}
+
+.header__coffe-info {
+  position: absolute;
+  top: 156px;
+  right: 10%;
+  text-align: right;
+}
+
+.header__truck-info {
+  position: absolute;
+  top: 256px;
+  right: 10%;
+  text-align: right;
+}
+
+.header__coffe-amount {
+  color: #d41443;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 53px;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.header__coffe-describe {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: right;
+}
+
+.header__truck-amount {
+  color: #d41443;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 53px;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.header__truck-describe {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: right;
+}
+
+.header__coffe-amount::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.header__truck-amount::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.header__bar-wrapper {
+  display: flex;
+  width: 100vw;
+  max-width: 1600px;
+  justify-content: space-between;
+  padding: 37px 115px 37px 46px;
+  align-items: center;
+}
+
+.header__logo {
+  width: 199px;
+  cursor: pointer;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  gap: 35px;
+}
+
+.header__element {
+  color: white;
+  cursor: pointer;
+  z-index: 100;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.header__element--active {
+  color: #d41443;
+}
+
+.header__main-button {
+  padding: 12px 37px;
+  background-color: white;
+  border-radius: 22px;
+  color: #d41443;
+  cursor: pointer;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.header__leftside {
+  width: 418px;
+  margin-left: 77px;
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__title {
+  max-width: 300px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 38px;
+}
+
+.header__title--describe {
+  font-size: 58px;
+  line-height: 90.5%;
+  letter-spacing: 0.04em;
+  color: #d41443;
+  padding: 0;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  margin-left: 38px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.header__left-button {
+  background-color: #d41443;
+  padding: 10px 24px;
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header__right-button {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 22px;
+  color: #d41443;
+  cursor: pointer;
+}
+
+.header__deco-image {
+  max-width: 188px;
+  margin-top: 56px;
+  margin-bottom: 45px;
+}
+
+.header__describe-text {
+  max-width: 200px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+  color: #ffffff;
+}
+
+.header__left-bar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}/*# sourceMappingURL=main.css.map */
