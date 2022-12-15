@@ -23,30 +23,39 @@
     right: 15%;
     z-index: -1;
   }
+
   .header__background-image--circle {
-    top: 30px;
-    right: 40%;
-    width: 324px;
+    bottom: 46px;
+    right: 19%;
+    & img {
+      width: 324px;
+    }
   }
   .header__background-image--icecream {
     // top: 115px;
     bottom: -3px;
-    right: calc(20% + 183px);
+    right: calc(16% + 143px);
+    & img {
+      width: 143px;
+    }
   }
   .header__background-image--lady {
     bottom: -3px;
-    right: 10%;
+    right: 6%;
+    & img {
+      width: 168px;
+    }
   }
   .header__coffe-info {
     position: absolute;
-    top: 156px;
-    right: 10%;
+    top: 95px;
+    right: 6%;
     text-align: right;
   }
   .header__truck-info {
     position: absolute;
-    top: 256px;
-    right: 10%;
+    top: 150px;
+    right: 6%;
 
     text-align: right;
   }
@@ -55,8 +64,8 @@
     font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
-    font-size: 46px;
-    line-height: 53px;
+    font-size: 28px;
+    line-height: 32 px;
     /* identical to box height */
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -65,7 +74,7 @@
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 8px;
     line-height: 18px;
     color: #ffffff;
     text-align: right;
@@ -76,8 +85,8 @@
     font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
-    font-size: 46px;
-    line-height: 53px;
+    font-size: 28px;
+    line-height: 32px;
     /* identical to box height */
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -86,7 +95,7 @@
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 8px;
     line-height: 18px;
     color: #ffffff;
     text-align: right;
@@ -95,10 +104,10 @@
   .header__coffe-amount::after {
     content: "";
     position: absolute;
-    right: -15px;
-    top: -5px;
-    width: 30px;
-    height: 30px;
+    right: -10px;
+    top: 0;
+    width: 16px;
+    height: 16px;
     background-color: white;
     border-radius: 50%;
     z-index: -1;
@@ -106,10 +115,10 @@
   .header__truck-amount::after {
     content: "";
     position: absolute;
-    right: -15px;
-    top: -5px;
-    width: 30px;
-    height: 30px;
+    right: -7px;
+    top: 0;
+    width: 16px;
+    height: 16px;
     background-color: white;
     border-radius: 50%;
     z-index: -1;
@@ -120,7 +129,7 @@
     width: 100vw;
     max-width: 1600px;
     justify-content: space-between;
-    padding: 37px 115px 0px 34px;
+    padding: 37px 34px 0px 34px;
     align-items: center;
   }
 
@@ -167,7 +176,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
-    line-height: 44px;
+    line-height: 25px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #ffffff;
@@ -183,7 +192,7 @@
   .header__buttons {
     display: flex;
     gap: 15px;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-left: 38px;
     font-family: "DM Sans";
     font-style: normal;
@@ -213,17 +222,17 @@
     }
   }
   .header__deco-image {
-    max-width: 188px;
-    margin-top: 56px;
-    margin-bottom: 45px;
+    max-width: 124px;
+    margin-top: 19px;
+    margin-bottom: 28px;
     margin-left: 34px;
   }
   .header__describe-text {
-    max-width: 200px;
+    max-width: 115px;
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 8px;
     line-height: 140%;
     /* or 20px */
 
@@ -233,7 +242,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 0px;
+    max-width: 270px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -256,16 +266,25 @@
     top: 55px;
     right: 20%;
     width: 538px;
+    & img {
+      width: 538px;
+    }
   }
   .header__background-image--icecream {
     // top: 115px;
     bottom: -3px;
     right: calc(20% + 183px);
     width: 236px;
+    & img {
+      width: 236px;
+    }
   }
   .header__background-image--lady {
     bottom: -3px;
     right: 10%;
+    & img {
+      width: 293px;
+    }
   }
   .header__coffe-info {
     position: absolute;
@@ -468,6 +487,7 @@
     max-width: 188px;
     margin-top: 56px;
     margin-bottom: 45px;
+    margin-left: 0;
   }
   .header__describe-text {
     max-width: 200px;
@@ -485,5 +505,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    max-width: 600px;
   }
 }
